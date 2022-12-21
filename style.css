@@ -6,7 +6,9 @@ body {
 
 .container {
     display: grid;
-    grid-template: 100px 100px 500px 100px / 300px 900px;
+    /* grid-template: 100px 100px 500px 100px / 300px 900px; */
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(auto-fit,minmax(2,1fr));
     gap: 15px;
     padding: 15px;
     height: 100%;
@@ -23,7 +25,6 @@ body {
 
 #article {
     display: flex;
-    
     flex-direction: column;
     background: lightgray;
 
